@@ -1,0 +1,110 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.App {
+    text-align: center;
+    padding: 5%;
+}
+
+.App-title {
+    font-size: 26px;
+}
+
+/* Profile */
+.Profile {
+    display: flex;
+    justify-content: center;
+}
+
+.Profile-img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    border-radius: 75px;
+    object-fit: cover;
+}
+
+.Profile-info {
+    margin-left: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Profile-name {
+    font-size: 26px;
+}
+
+.Profile-followers, .Profile-genres {
+    font-size: 18px;
+}
+
+/* Gallery */
+.Track {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.Track-img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #fff;
+    border-radius: 2px;
+    object-fit: cover;
+    position: absolute
+}
+
+.Track-text {
+    background-color: #000;
+    color: #fff;
+    opacity: 0.75;
+    width: 194px;
+    margin-left: 3px; 
+    text-align: center;
+    position: abslute;
+    bottom: 0;
+    padding: 10px;
+}
+
+.Track-play {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.Track-play-inner {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    background-color: #000;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    padding-top: 13px;
+    margin: 80px 0px 0px 80px;
+    opacity: 0;
+}
+
+.Track-play-inner:hover{
+    opacity: 0.8;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade-in{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
